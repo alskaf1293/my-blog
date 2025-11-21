@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Tim Oh">
 <meta name="dcterms.date" content="2025-11-21">
 <meta name="description" content="Some notes on where von Neumann was right and wrong.">
 
@@ -102,6 +101,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -156,12 +156,6 @@ window.Quarto = {
   
   <div class="quarto-title-meta">
 
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Tim Oh </p>
-            </div>
-    </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
@@ -182,40 +176,31 @@ window.Quarto = {
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
-::: {.hidden}
-$$
-\newcommand{\RR}{\mathbb{R}}
-\newcommand{\EE}{\mathbb{E}}
-\newcommand{\PP}{\mathbb{P}}
-\newcommand{\given}{\,\middle|\,}
-\newcommand{\grad}{\nabla}
-\newcommand{\KL}{\mathrm{KL}}
-
-
-\newcommand{\ket}[1]{\left| #1 \right\rangle}
-\newcommand{\bra}[1]{\left\langle #1 \right|}
-\newcommand{\braket}[2]{\left\langle #1 \middle| #2 \right\rangle}
-
-$$
-:::
 
 
 
 
 
-<p>Intro text here.</p>
-<p>Inline math like <span class="math inline">\(E = mc^2\)</span>.</p>
-<p>Display math:</p>
+<p>I’ve recently just finished reading the book “The Computer and The Brain” by John Von Neumann. A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science. The book that he wrote was his opinions and observations on the differences between hardware of the digital computers that had at the time, only recently began being developed and the biological “wetware” that is the brain.</p>
+<p>Here I’m going to talk about some major points that I thought were interesting in the book, as well as a comparison between how the technology looked back then and the developments that have been made since.</p>
+<ul>
+<li><p>Short Codes</p></li>
+<li><p>Error Resilience as a trade off of precision</p></li>
+</ul>
 <p><span class="math display">\[
-\mathcal{F}[f](k) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i k x}\, dx
-\]</span></p>
-<p><span class="math display">\[
-\ket{\psi} a quantum bracket
+\ket{\psi}
 \]</span></p>
 
 
 
 </main> <!-- /main -->
+
+$$
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\braket}[2]{\left\langle #1 \middle| #2 \right\rangle}
+$$
+
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
