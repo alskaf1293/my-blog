@@ -3,13 +3,11 @@ project:
   output-dir: _site
 
 website:
-  title: "Tim's Notes"
+  title: "Timothy Oh"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - text: Posts
-        href: posts/index.qmd
 
 format:
   html:

@@ -6,17 +6,29 @@ categories: [neuroscience, computation]
 ---
 
 I've recently just finished reading the book "The Computer and The Brain" by John Von Neumann. 
-A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science.
-The book that he wrote was his opinions and observations on the differences between hardware of the digital computers
-that had at the time, only recently began being developed and the biological "wetware" that is the brain.
+A brilliant physicist, he contributed a great many things to quantum mechanics, 
+mathematics, economics, and computer science.
+The book that he wrote was his opinions and observations 
+on the differences between hardware of the digital computers
+that had at the time, only recently began being 
+developed and the biological "wetware" that is the brain.
+Interestingly, this book was a collection of his notes that
+he was working on just before he died. It may very well be 
+the case that he could have had more to say.
 
 Here I'm going to talk about some major points that I thought were interesting in the book, as well as a comparison
 between how the technology looked back then and the developments that have been made since.
 
-- Short Codes
-
 - Error Resilience as a trade off of precision
 
+- Serial versus Parallel Organization
+
+- Different Notational Systems
+
+- Architecture Differences
+
+- Short Codes
+
+
 $$
-\ket{\psi}
 $$

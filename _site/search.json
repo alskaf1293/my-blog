@@ -11,12 +11,12 @@
     "href": "posts/post1/index.html",
     "title": "The Differences Between the Computer and the Brain",
     "section": "",
-    "text": "I’ve recently just finished reading the book “The Computer and The Brain” by John Von Neumann. A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science. The book that he wrote was his opinions and observations on the differences between hardware of the digital computers that had at the time, only recently began being developed and the biological “wetware” that is the brain.\nHere I’m going to talk about some major points that I thought were interesting in the book, as well as a comparison between how the technology looked back then and the developments that have been made since.\n\nShort Codes\nError Resilience as a trade off of precision\n\n\\[\n\\ket{\\psi}\n\\]"
+    "text": "I’ve recently just finished reading the book “The Computer and The Brain” by John Von Neumann. A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science. The book that he wrote was his opinions and observations on the differences between hardware of the digital computers that had at the time, only recently began being developed and the biological “wetware” that is the brain. Interestingly, this book was a collection of his notes that he was working on just before he died. It may very well be the case that he could have had more to say.\nHere I’m going to talk about some major points that I thought were interesting in the book, as well as a comparison between how the technology looked back then and the developments that have been made since.\n\nError Resilience as a trade off of precision\nSerial versus Parallel Organization\nDifferent Notational Systems\nArchitecture Differences\nShort Codes\n\n\\[\n\\]"
   },
   {
     "objectID": "macros.html",
     "href": "macros.html",
-    "title": "Tim's Notes",
+    "title": "Timothy Oh",
     "section": "",
     "text": "\\[\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n\\]"
   },
