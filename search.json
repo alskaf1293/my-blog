@@ -1,23 +1,30 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "macros.html",
+    "href": "macros.html",
+    "title": "Tim's Notes",
     "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "my-blog",
-    "section": "",
-    "text": "The Differences Between the Computer and the Brain\n\n\n\nneuroscience\n\ncomputation\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\nTim Oh\n\n\n\n\n\nNo matching items"
+    "text": "::: {.hidden}\n$$\n\\newcommand{\\RR}{\\mathbb{R}}\n\\newcommand{\\EE}{\\mathbb{E}}\n\\newcommand{\\PP}{\\mathbb{P}}\n\\newcommand{\\given}{\\,\\middle|\\,}\n\\newcommand{\\grad}{\\nabla}\n\\newcommand{\\KL}{\\mathrm{KL}}\n\n\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n\n$$\n:::\n\n\n\n\n\n$$ \n$$"
   },
   {
     "objectID": "posts/post1/index.html",
     "href": "posts/post1/index.html",
     "title": "The Differences Between the Computer and the Brain",
     "section": "",
-    "text": "Intro text here.\nInline math like \\(E = mc^2\\).\nDisplay math:\n\\[\n\\mathcal{F}[f](k) = \\int_{-\\infty}^{\\infty} f(x) e^{-2\\pi i k x}\\, dx\n\\]"
+    "text": "::: {.hidden}\n$$\n\\newcommand{\\RR}{\\mathbb{R}}\n\\newcommand{\\EE}{\\mathbb{E}}\n\\newcommand{\\PP}{\\mathbb{P}}\n\\newcommand{\\given}{\\,\\middle|\\,}\n\\newcommand{\\grad}{\\nabla}\n\\newcommand{\\KL}{\\mathrm{KL}}\n\n\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n\n$$\n:::\n\n\n\n\n\nIntro text here.\nInline math like \\(E = mc^2\\).\nDisplay math:\n\\[\n\\mathcal{F}[f](k) = \\int_{-\\infty}^{\\infty} f(x) e^{-2\\pi i k x}\\, dx\n\\]\n\\[\n\\ket{\\psi} a quantum bracket\n\\]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "my-blog",
+    "section": "",
+    "text": "::: {.hidden}\n$$\n\\newcommand{\\RR}{\\mathbb{R}}\n\\newcommand{\\EE}{\\mathbb{E}}\n\\newcommand{\\PP}{\\mathbb{P}}\n\\newcommand{\\given}{\\,\\middle|\\,}\n\\newcommand{\\grad}{\\nabla}\n\\newcommand{\\KL}{\\mathrm{KL}}\n\n\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n\n$$\n:::\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Differences Between the Computer and the Brain\n\n\n\nneuroscience\n\ncomputation\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\nTim Oh\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "::: {.hidden}\n$$\n\\newcommand{\\RR}{\\mathbb{R}}\n\\newcommand{\\EE}{\\mathbb{E}}\n\\newcommand{\\PP}{\\mathbb{P}}\n\\newcommand{\\given}{\\,\\middle|\\,}\n\\newcommand{\\grad}{\\nabla}\n\\newcommand{\\KL}{\\mathrm{KL}}\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n$$\n:::\nAbout this blog"
   }
 ]

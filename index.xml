@@ -16,6 +16,22 @@
   <dc:creator>Tim Oh</dc:creator>
   <link>https://alskaf1293.github.io/my-blog/posts/post1/</link>
   <description><![CDATA[ 
+::: {.hidden}
+$$
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\EE}{\mathbb{E}}
+\newcommand{\PP}{\mathbb{P}}
+\newcommand{\given}{\,\middle|\,}
+\newcommand{\grad}{\nabla}
+\newcommand{\KL}{\mathrm{KL}}
+
+
+\newcommand{\ket}[1]{\left| #1 \right\rangle}
+\newcommand{\bra}[1]{\left\langle #1 \right|}
+\newcommand{\braket}[2]{\left\langle #1 \middle| #2 \right\rangle}
+
+$$
+:::
 
 
 
@@ -25,6 +41,7 @@
 <p>Inline math like <img src="https://latex.codecogs.com/png.latex?E%20=%20mc%5E2">.</p>
 <p>Display math:</p>
 <p><img src="https://latex.codecogs.com/png.latex?%0A%5Cmathcal%7BF%7D%5Bf%5D(k)%20=%20%5Cint_%7B-%5Cinfty%7D%5E%7B%5Cinfty%7D%20f(x)%20e%5E%7B-2%5Cpi%20i%20k%20x%7D%5C,%20dx%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cket%7B%5Cpsi%7D%20a%20quantum%20bracket%0A"></p>
 
 
 
