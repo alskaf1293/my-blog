@@ -2,23 +2,23 @@ name: Quarto Publish
 
 on:
   push:
-    branches: [ main ]   # or whatever your default branch is
+    branches:
+      - main
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write     # so the action can push to gh-pages
+      contents: write
 
     steps:
-      - name: Check out repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: latest
+        # version: "latest"   <-- REMOVE THIS LINE
 
       - name: Render site
         uses: quarto-dev/quarto-actions/render@v2
