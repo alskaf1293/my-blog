@@ -25,6 +25,13 @@
     "href": "index.html",
     "title": "my-blog",
     "section": "",
-    "text": "Post With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nNov 21, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nFirst post\n\n\n\n\n\n\n\n\nNov 20, 2025\n\n\n\n\n\nNo matching items"
+    "text": "The Differences Between the Computer and the Brain\n\n\n\nneuroscience\n\ncomputation\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\nTim Oh\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post1/index.html",
+    "href": "posts/post1/index.html",
+    "title": "The Differences Between the Computer and the Brain",
+    "section": "",
+    "text": "Intro text here.\nInline math like \\(E = mc^2\\).\nDisplay math:\n\\[\n\\mathcal{F}[f](k) = \\int_{-\\infty}^{\\infty} f(x) e^{-2\\pi i k x}\\, dx\n\\]"
   }
 ]
