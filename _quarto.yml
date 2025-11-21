@@ -15,5 +15,7 @@ format:
   html:
     theme: cosmo
     toc: true
-    include-before-body:
+    include-after-body:
       - macros.qmd
+    css: styles.css
+

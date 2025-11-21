@@ -1,21 +1,22 @@
 ---
 title: "The Differences Between the Computer and the Brain"
 description: "Some notes on where von Neumann was right and wrong."
-author: "Tim Oh"
 date: 2025-11-21
 categories: [neuroscience, computation]
 ---
 
-Intro text here.
+I've recently just finished reading the book "The Computer and The Brain" by John Von Neumann. 
+A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science.
+The book that he wrote was his opinions and observations on the differences between hardware of the digital computers
+that had at the time, only recently began being developed and the biological "wetware" that is the brain.
 
-Inline math like $E = mc^2$.
+Here I'm going to talk about some major points that I thought were interesting in the book, as well as a comparison
+between how the technology looked back then and the developments that have been made since.
 
-Display math:
+- Short Codes
+
+- Error Resilience as a trade off of precision
 
 $$
-\mathcal{F}[f](k) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i k x}\, dx
-$$
-
-$$
-\ket{\psi} a quantum bracket
+\ket{\psi}
 $$

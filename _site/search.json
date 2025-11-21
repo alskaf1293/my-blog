@@ -4,34 +4,27 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this blog"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "First post",
-    "section": "",
-    "text": "This is inline math: \\(E = mc^2\\)\nAnd display math:\n\\[\n\\mathcal{F}[f](k) = \\int_{-\\infty}^{\\infty} f(x) e^{-2\\pi i k x} \\, dx\n\\]"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "my-blog",
-    "section": "",
-    "text": "The Differences Between the Computer and the Brain\n\n\n\nneuroscience\n\ncomputation\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\nTim Oh\n\n\n\n\n\nNo matching items"
+    "text": "::: {.hidden}\n$$\n\\newcommand{\\RR}{\\mathbb{R}}\n\\newcommand{\\EE}{\\mathbb{E}}\n\\newcommand{\\PP}{\\mathbb{P}}\n\\newcommand{\\given}{\\,\\middle|\\,}\n\\newcommand{\\grad}{\\nabla}\n\\newcommand{\\KL}{\\mathrm{KL}}\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n$$\n:::\nAbout this blog"
   },
   {
     "objectID": "posts/post1/index.html",
     "href": "posts/post1/index.html",
     "title": "The Differences Between the Computer and the Brain",
     "section": "",
-    "text": "Intro text here.\nInline math like \\(E = mc^2\\).\nDisplay math:\n\\[\n\\mathcal{F}[f](k) = \\int_{-\\infty}^{\\infty} f(x) e^{-2\\pi i k x}\\, dx\n\\]"
+    "text": "I’ve recently just finished reading the book “The Computer and The Brain” by John Von Neumann. A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science. The book that he wrote was his opinions and observations on the differences between hardware of the digital computers that had at the time, only recently began being developed and the biological “wetware” that is the brain.\nHere I’m going to talk about some major points that I thought were interesting in the book, as well as a comparison between how the technology looked back then and the developments that have been made since.\n\nShort Codes\nError Resilience as a trade off of precision\n\n\\[\n\\ket{\\psi}\n\\]"
+  },
+  {
+    "objectID": "macros.html",
+    "href": "macros.html",
+    "title": "Tim's Notes",
+    "section": "",
+    "text": "\\[\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n\\]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Timothy Oh",
+    "section": "",
+    "text": "The Differences Between the Computer and the Brain\n\n\n\nneuroscience\n\ncomputation\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\nNo matching items"
   }
 ]
