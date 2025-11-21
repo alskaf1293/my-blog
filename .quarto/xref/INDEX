@@ -9,5 +9,8 @@
   },
   "macros.qmd": {
     "macros.html": "6d577fed"
+  },
+  "about.qmd": {
+    "about.html": "d20be41f"
   }
 }
