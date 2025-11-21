@@ -1,0 +1,17 @@
+---
+title: "The Differences Between the Computer and the Brain"
+description: "Some notes on where von Neumann was right and wrong."
+author: "Tim Oh"
+date: 2025-11-21
+categories: [neuroscience, computation]
+---
+
+Intro text here.
+
+Inline math like $E = mc^2$.
+
+Display math:
+
+$$
+\mathcal{F}[f](k) = \int_{-\infty}^{\infty} f(x) e^{-2\pi i k x}\, dx
+$$
