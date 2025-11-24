@@ -12,7 +12,7 @@
 <generator>quarto-1.8.26</generator>
 <lastBuildDate>Fri, 21 Nov 2025 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>The Differences Between the Computer and the Brain</title>
+  <title>How the momentum operator arises from spacial translation symmetry</title>
   <link>https://alskaf1293.github.io/my-blog/posts/post1/</link>
   <description><![CDATA[ 
 
@@ -20,15 +20,40 @@
 
 
 
-<p>I’ve recently just finished reading the book “The Computer and The Brain” by John Von Neumann. A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science. The book that he wrote was his opinions and observations on the differences between hardware of the digital computers that had at the time, only recently began being developed and the biological “wetware” that is the brain. Interestingly, this book was a collection of his notes that he was working on just before he died. It may very well be the case that he could have had more to say.</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A"></p>
+
+
+
+ ]]></description>
+  <category>quantum mechanics</category>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post1/</guid>
+  <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>The Differences Between the Computer and the Brain</title>
+  <link>https://alskaf1293.github.io/my-blog/posts/post2/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>I’ve recently just finished reading the book “The Computer and The Brain” by John Von Neumann. A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science. The book that he wrote was his opinions and observations on the differences between hardware of the digital computers that had at the time, only recently began being developed and the biological “wetware” that is the brain. Interestingly, this book was a collection of his notes that he was working on just before he died. It may very well be the case that he could have had alot more to say.</p>
 <p>Here I’m going to talk about some major points that I thought were interesting in the book, as well as a comparison between how the technology looked back then and the developments that have been made since.</p>
 <ul>
-<li><p>Error Resilience as a trade off of precision</p></li>
-<li><p>Serial versus Parallel Organization</p></li>
-<li><p>Different Notational Systems</p></li>
-<li><p>Architecture Differences</p></li>
-<li><p>Short Codes</p></li>
+<li>Error Resilience as a Trade off of Precision</li>
 </ul>
+<p>In the book, von Neumann highlights an interesting thought: that error resilience is a trade off of precision. To elaborate on this, one could consider a digital machine. In any such machine, the execution of said machine depends on the information stored in memory and the specific sequence of instructions that the computer executes. It’s imperative that these digits are to be represented exactly as the programmer intends. In the case that one is flipped (say from a cosmic particle or something) could change the value of a store number entirely or possibly even crash a program. The brain, on the other hand, is not as vulnerable to tiny perturbations. A spike recieved at time <img src="https://latex.codecogs.com/png.latex?t"> will not differ in a very meaningful way if that spike were offset to time <img src="https://latex.codecogs.com/png.latex?t+%5CDelta%20t"> for some small <img src="https://latex.codecogs.com/png.latex?%5CDelta%20t">. It should be noted that this noise tolerance comes at a tradeoff of precision.</p>
+<p>To consider what exactly we mean by precision, we can consider the quantity of jitter. Suppose we have a spike train denoted by the times <img src="https://latex.codecogs.com/png.latex?%5C%7B%20t_0,%20t_1,%20%5Cdots,%20t_k%5C%7D">. We can take the interspike intervals and group them into another list <img src="https://latex.codecogs.com/png.latex?%5C%7Bi_0,%20i_1,%20%5Cdots,%20i_%7Bk-1%7D%5C%7D">. Taking the standard deviation of this list we have jitter. We can use this as a measure of timing precision in a neuron. In contrast, a clock edge in a digital computer must have a jitter of <img src="https://latex.codecogs.com/png.latex?10%5E%7B-12%7D"> seconds, otherwise the effects cascade downards and calculations get messed up. Comparing this with the precision of a neuron, is a difference in 9 orders of magnitude. Clearly, the neuron’s timing fidelity is much less sensitive than a digital computer is required to be.</p>
+<ul>
+<li>Serial versus Parallel Organization and Architecture Differences</li>
+</ul>
+<p>Digital programs (typically) execute programs sequentially, reflecting its serial nature. Brains on the other hand operate in millisecond level precisions as we have established. Despite this seemingly superior advantage of digital computers, parallelism is what makes the brain able to create rich, semantic representations. Control is decentralized, and computation arises from large networks of activity rather than symbolic manipulation.</p>
+<p>The von Neumann machine has separated memory and computation units, whereas the brain has them encoded into the same fundamental unit. Synapses store long term data, neurons both compute and store nonlinearities.</p>
+<ul>
+<li>Different Notational Systems and Short Codes</li>
+</ul>
+<p>Neumann estimated t</p>
 <p><img src="https://latex.codecogs.com/png.latex?%0A"></p>
 
 
@@ -36,7 +61,34 @@
  ]]></description>
   <category>neuroscience</category>
   <category>computation</category>
-  <guid>https://alskaf1293.github.io/my-blog/posts/post1/</guid>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post2/</guid>
+  <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>The Expectation Value of An Observable in Quantum mechanics</title>
+  <link>https://alskaf1293.github.io/my-blog/posts/post3/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In quantum mechanics, an observable is given by the Hermitian operator <img src="https://latex.codecogs.com/png.latex?%5Chat%7BQ%7D">. The expectation value of said observable is given by</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Cbra%7B%5Cpsi%7D%20%5Chat%7BQ%7D%20%5Cket%7B%5Cpsi%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cket%7B%5Cpsi%7D"> can be expanded in the basis of the observable, given with the coefficients</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cket%7B%5Cpsi%7D%20=%20c_1%5Cket%7Bq_1%7D%20+%20c_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20%5Cket%7Bq_k%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7BQ%7D%5Cket%7B%5Cpsi%7D%20=%20%5Chat%7BQ%7D(c_1%5Cket%7Bq_1%7D%20+%20c_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20%5Cket%7Bq_k%7D)%0A"> and given with the observable relation <img src="https://latex.codecogs.com/png.latex?%5Chat%7BQ%7D%5Cket%7Bq_j%7D%20=%20q_j%5Cket%7Bq_j%7D">, we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbra%7B%5Cpsi%7D%20%5Chat%7BQ%7D%20%5Cket%7B%5Cpsi%7D%20=%20(c%5E*_1%5Cbra%7Bq_1%7D%20+%20c%5E*_2%5Cbra%7Bq_2%7D%20+%20%5Cdots%20+%20c%5E*_k%20%5Cbra%7Bq_k%7D)%20%5Cleft(c_1%20q_1%5Cket%7Bq_1%7D%20+%20c_2%20q_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20q_k%5Cket%7Bq_k%7D%20%5Cright)%20%5C%5C%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Csum_%7Bi,j%7D%20c%5E*_i%20c_j%20q_j%20%5Cbraket%7Bq_i%7Cq_j%7D%0A"></p>
+<p>and using the orthonormality condition <img src="https://latex.codecogs.com/png.latex?%5Cbraket%7Bq_i%7Cq_j%7D%20=%20%5Cdelta_%7Bij%7D">, we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Csum_%7Bj%7D%20%7Cc_j%7C%5E2%20q_j%0A"></p>
+<p>This corresponds exactly to the expectation value equation.</p>
+
+
+
+ ]]></description>
+  <category>quantum mechanics</category>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post3/</guid>
   <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>

@@ -7,24 +7,38 @@
     "text": "\\[\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n\\]"
   },
   {
+    "objectID": "posts/post3/index.html",
+    "href": "posts/post3/index.html",
+    "title": "The Expectation Value of An Observable in Quantum mechanics",
+    "section": "",
+    "text": "In quantum mechanics, an observable is given by the Hermitian operator \\(\\hat{Q}\\). The expectation value of said observable is given by\n\\[\n\\langle Q \\rangle = \\bra{\\psi} \\hat{Q} \\ket{\\psi}\n\\]\n\\(\\ket{\\psi}\\) can be expanded in the basis of the observable, given with the coefficients\n\\[\n\\ket{\\psi} = c_1\\ket{q_1} + c_2\\ket{q_2} + \\dots + c_k \\ket{q_k}\n\\]\n\\[\n\\hat{Q}\\ket{\\psi} = \\hat{Q}(c_1\\ket{q_1} + c_2\\ket{q_2} + \\dots + c_k \\ket{q_k})\n\\] and given with the observable relation \\(\\hat{Q}\\ket{q_j} = q_j\\ket{q_j}\\), we have\n\\[\n\\bra{\\psi} \\hat{Q} \\ket{\\psi} = (c^*_1\\bra{q_1} + c^*_2\\bra{q_2} + \\dots + c^*_k \\bra{q_k}) \\left(c_1 q_1\\ket{q_1} + c_2 q_2\\ket{q_2} + \\dots + c_k q_k\\ket{q_k} \\right) \\\\\n\\]\n\\[\n\\langle Q \\rangle = \\sum_{i,j} c^*_i c_j q_j \\braket{q_i|q_j}\n\\]\nand using the orthonormality condition \\(\\braket{q_i|q_j} = \\delta_{ij}\\), we have\n\\[\n\\langle Q \\rangle = \\sum_{j} |c_j|^2 q_j\n\\]\nThis corresponds exactly to the expectation value equation."
+  },
+  {
     "objectID": "posts/post1/index.html",
     "href": "posts/post1/index.html",
-    "title": "The Differences Between the Computer and the Brain",
+    "title": "How the momentum operator arises from spacial translation symmetry",
     "section": "",
-    "text": "I’ve recently just finished reading the book “The Computer and The Brain” by John Von Neumann. A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science. The book that he wrote was his opinions and observations on the differences between hardware of the digital computers that had at the time, only recently began being developed and the biological “wetware” that is the brain. Interestingly, this book was a collection of his notes that he was working on just before he died. It may very well be the case that he could have had more to say.\nHere I’m going to talk about some major points that I thought were interesting in the book, as well as a comparison between how the technology looked back then and the developments that have been made since.\n\nError Resilience as a trade off of precision\nSerial versus Parallel Organization\nDifferent Notational Systems\nArchitecture Differences\nShort Codes\n\n\\[\n\\]"
+    "text": "\\[\n\\]"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Timothy Oh",
     "section": "",
-    "text": "The Differences Between the Computer and the Brain\n\n\n\nneuroscience\n\ncomputation\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\nNo matching items"
+    "text": "How the momentum operator arises from spacial translation symmetry\n\n\n\nquantum mechanics\n\n\n\n\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Differences Between the Computer and the Brain\n\n\n\nneuroscience\n\ncomputation\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Expectation Value of An Observable in Quantum mechanics\n\n\n\nquantum mechanics\n\n\n\n\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post2/index.html",
+    "href": "posts/post2/index.html",
+    "title": "The Differences Between the Computer and the Brain",
+    "section": "",
+    "text": "I’ve recently just finished reading the book “The Computer and The Brain” by John Von Neumann. A brilliant physicist, he contributed a great many things to quantum mechanics, mathematics, economics, and computer science. The book that he wrote was his opinions and observations on the differences between hardware of the digital computers that had at the time, only recently began being developed and the biological “wetware” that is the brain. Interestingly, this book was a collection of his notes that he was working on just before he died. It may very well be the case that he could have had alot more to say.\nHere I’m going to talk about some major points that I thought were interesting in the book, as well as a comparison between how the technology looked back then and the developments that have been made since.\n\nError Resilience as a Trade off of Precision\n\nIn the book, von Neumann highlights an interesting thought: that error resilience is a trade off of precision. To elaborate on this, one could consider a digital machine. In any such machine, the execution of said machine depends on the information stored in memory and the specific sequence of instructions that the computer executes. It’s imperative that these digits are to be represented exactly as the programmer intends. In the case that one is flipped (say from a cosmic particle or something) could change the value of a store number entirely or possibly even crash a program. The brain, on the other hand, is not as vulnerable to tiny perturbations. A spike recieved at time \\(t\\) will not differ in a very meaningful way if that spike were offset to time \\(t+\\Delta t\\) for some small \\(\\Delta t\\). It should be noted that this noise tolerance comes at a tradeoff of precision.\nTo consider what exactly we mean by precision, we can consider the quantity of jitter. Suppose we have a spike train denoted by the times \\(\\{ t_0, t_1, \\dots, t_k\\}\\). We can take the interspike intervals and group them into another list \\(\\{i_0, i_1, \\dots, i_{k-1}\\}\\). Taking the standard deviation of this list we have jitter. We can use this as a measure of timing precision in a neuron. In contrast, a clock edge in a digital computer must have a jitter of \\(10^{-12}\\) seconds, otherwise the effects cascade downards and calculations get messed up. Comparing this with the precision of a neuron, is a difference in 9 orders of magnitude. Clearly, the neuron’s timing fidelity is much less sensitive than a digital computer is required to be.\n\nSerial versus Parallel Organization and Architecture Differences\n\nDigital programs (typically) execute programs sequentially, reflecting its serial nature. Brains on the other hand operate in millisecond level precisions as we have established. Despite this seemingly superior advantage of digital computers, parallelism is what makes the brain able to create rich, semantic representations. Control is decentralized, and computation arises from large networks of activity rather than symbolic manipulation.\nThe von Neumann machine has separated memory and computation units, whereas the brain has them encoded into the same fundamental unit. Synapses store long term data, neurons both compute and store nonlinearities.\n\nDifferent Notational Systems and Short Codes\n\nNeumann estimated t\n\\[\n\\]"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "Timothy Oh",
     "section": "",
-    "text": "Hi, I am Timothy Oh. Currently I am doing research at the University of California, Riverside. I like science. \\[\n\\]"
+    "text": "Hi, I am Timothy Oh. Currently I am doing research at the University of California, Riverside. I’m interested in how intelligence can emerge as a consequence of simpler parts. This reflects my belief that our understanding of intelligence is best obtained through a bottom-up approach, where we should try our best to build one, in contrast to more systematic approaches like neuronal-population averaging and statistical abstractions.\nMy expertise includes machine learning, theoretical and computational neuroscience, neuromorphic computing, computational complexity theory, software engineering, computer architecture, electrical engineering, computational biology, information theory, stem cell research, and alternative forms of computation. I also have an interest in physics, with a very rudimentary understanding of general relativity and quantum field theory, and their applications to exciting frontiers such as nuclear fusion, quantum computing, gravitational wave detection, and high energy particle accelerators.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\]"
   }
 ]
