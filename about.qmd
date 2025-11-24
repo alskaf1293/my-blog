@@ -3,6 +3,7 @@ title: ""
 page-layout: article
 toc: false
 sidebar: false
+smart: false
 ---
 
 <img src="me.jpeg" class="about-photo" alt="Timothy Oh">
@@ -20,8 +21,24 @@ I also have an interest in physics, with a very rudimentary understanding of gen
 and their applications to exciting frontiers such as nuclear fusion, quantum computing, gravitational wave detection, 
 and high energy particle accelerators.
 
+"It also ought to be noted that the language here involved may well correspond to a short code in the sense described earlier, 
+rather than to a complete code: when we talk mathematics, we may be discussing a secondary language, 
+built on the primary language truly used by the central nervous system. 
+Thus the outward forms of our mathematics are not absolutely relevant from the 
+point of view of evaluating what the mathematical or logical language truly used 
+by the central nervous system is. However, the above remarks about reliability and 
+logical and arithmetical depth prove that whatever the system is, it cannot fail to 
+differ considerably from what we consciously and explicitly consider as mathematics."
+
+<div style="text-align: right;">
+\- John Von Neumann, the Computer and the Brain, 1958
+</div>
+
+$$
+$$
+
 ::: {.html}
-<div class="gif-grid">
+<div class="gif-grid" style="margin-bottom: 2rem;">
   <div><img src="gifs/brain.gif"></div>
   <div><img src="gifs/cern.gif"></div>
   <div><img src="gifs/ganinterpolation.gif"></div>
@@ -30,6 +47,3 @@ and high energy particle accelerators.
   <div><img src="gifs/quantumcomputer.gif"></div>
 </div>
 :::
-
-$$
-$$

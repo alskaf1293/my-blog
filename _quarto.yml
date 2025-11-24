@@ -6,11 +6,17 @@ website:
   title: "Timothy Oh"
   favicon: brainicon.svg
   navbar:
+    search: false
     left:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: About
+    right:
+      - icon: mortarboard
+        href: "https://scholar.google.com/citations?user=ttu3qsQAAAAJ&hl=en"
+      - icon: github
+        href: "https://github.com/alskaf1293"
 
 format:
   html:
