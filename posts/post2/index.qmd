@@ -1,0 +1,58 @@
+---
+title: "The Differences Between the Computer and the Brain"
+description: "Some notes on where von Neumann was right and wrong."
+date: 2025-11-21
+categories: [neuroscience, computation]
+---
+
+I've recently just finished reading the book "The Computer and The Brain" by John Von Neumann. 
+A brilliant physicist, he contributed a great many things to quantum mechanics, 
+mathematics, economics, and computer science.
+The book that he wrote was his opinions and observations 
+on the differences between hardware of the digital computers
+that had at the time, only recently began being 
+developed and the biological "wetware" that is the brain.
+Interestingly, this book was a collection of his notes that
+he was working on just before he died. It may very well be 
+the case that he could have had alot more to say.
+
+Here I'm going to talk about some major points that I thought were interesting in the book, as well as a comparison
+between how the technology looked back then and the developments that have been made since.
+
+- Error Resilience as a Trade off of Precision
+
+In the book, von Neumann highlights an interesting thought: 
+that error resilience is a trade off of precision.
+To elaborate on this, one could consider a digital machine. In any such machine, the execution of said machine depends
+on the information stored in memory and the specific sequence of instructions that the computer executes.
+It's imperative that these digits are to be represented exactly as the programmer intends. In the case that one is
+flipped (say from a cosmic particle or something) could change the value of a store number entirely or possibly even
+crash a program. The brain, on the other hand, is not as vulnerable to tiny perturbations. A spike recieved at time $t$
+will not differ in a very meaningful way if that spike were offset to time $t+\Delta t$ for some small $\Delta t$.
+It should be noted that this noise tolerance comes at a tradeoff of precision.
+
+To consider what exactly we mean by precision, we can consider the quantity of jitter. 
+Suppose we have a spike train denoted by the times $\{ t_0, t_1, \dots, t_k\}$. 
+We can take the interspike intervals and group them into another list $\{i_0, i_1, \dots, i_{k-1}\}$.
+Taking the standard deviation of this list we have jitter. We can use this as a measure of timing precision in a neuron.
+In contrast, a clock edge in a digital computer must have a jitter of $10^{-12}$ seconds, otherwise the effects cascade
+downards and calculations get messed up. Comparing this with the precision of a neuron, is a difference in 9 orders of magnitude.
+Clearly, the neuron's timing fidelity is much less sensitive than a digital computer is required to be.
+
+- Serial versus Parallel Organization and Architecture Differences
+
+Digital programs (typically) execute programs sequentially, reflecting its serial nature. 
+Brains on the other hand operate in millisecond level precisions as we have established.
+Despite this seemingly superior advantage of digital computers, 
+parallelism is what makes the brain able to create rich, semantic representations.
+Control is decentralized, and computation arises from large networks of activity rather than symbolic manipulation.
+
+The von Neumann machine has separated memory and computation units, whereas the brain has them encoded into the same
+fundamental unit. Synapses store long term data, neurons both compute and store nonlinearities.
+
+- Different Notational Systems and Short Codes
+
+Neumann estimated t
+
+$$
+$$

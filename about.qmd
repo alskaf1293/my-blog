@@ -1,10 +1,35 @@
 ---
 title: ""
-title-block-banner: false
-title-block-style: none
+page-layout: article
+toc: false
+sidebar: false
 ---
 
-Hi, I am Timothy Oh. Currently I am doing research at the University of California, Riverside. 
-I like science.
+<img src="me.jpeg" class="about-photo" alt="Timothy Oh">
+
+Hi, I am Timothy Oh. Currently I am doing research at the University of California, Riverside. I’m interested in how intelligence can emerge as a consequence of simpler parts. 
+This reflects my belief that our understanding of intelligence is best obtained through a bottom-up approach,
+where we should try our best to build one, in contrast to more systematic approaches like neuronal-population averaging
+and statistical abstractions.
+
+My expertise includes machine learning, theoretical and computational neuroscience, 
+neuromorphic computing, computational complexity theory, software engineering, computer architecture, 
+electrical engineering, computational biology, information theory, stem cell research, 
+and alternative forms of computation. 
+I also have an interest in physics, with a very rudimentary understanding of general relativity and quantum field theory, 
+and their applications to exciting frontiers such as nuclear fusion, quantum computing, gravitational wave detection, 
+and high energy particle accelerators.
+
+::: {.html}
+<div class="gif-grid">
+  <div><img src="gifs/brain.gif"></div>
+  <div><img src="gifs/cern.gif"></div>
+  <div><img src="gifs/ganinterpolation.gif"></div>
+  <div><img src="gifs/gravitationalwaves.gif"></div>
+  <div><img src="gifs/pong.gif"></div>
+  <div><img src="gifs/quantumcomputer.gif"></div>
+</div>
+:::
+
 $$
 $$

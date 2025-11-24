@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Timothy Oh"
+  favicon: brainicon.svg
   navbar:
     left:
       - href: index.qmd

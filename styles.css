@@ -1,3 +1,66 @@
-.math-macros {
-  display: none !important;
+#quarto-document-content {
+  max-width: 700px;   /* narrower than the default (~800px) */
+  margin: 0 auto;     /* keeps it centered */
 }
+
+
+.navbar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.navbar > .container-fluid {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.navbar-nav {
+  gap: 1.25rem;
+}
+
+.navbar-brand {
+  margin-right: 2rem;
+}
+
+
+
+.gif-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 360px; /* smaller grid */
+}
+
+
+.gif-grid img {
+  width: 100%;
+  height: 100px;        /* set any height you want */
+  object-fit: cover;    /* crop to fill the cell */
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.about-photo {
+  float: left;
+  width: 180px;      /* adjust size as you like */
+  height: auto;
+  margin: 0 20px 10px 0;  /* space to the right and a bit below */
+  border-radius: 6px;
+}
+
+body {
+  font-size: 1.1rem;   /* increase overall font size */
+}
+
+p {
+  font-size: 1.1rem;   /* ensure paragraphs scale */
+  line-height: 1.6;
+}
+
+
+

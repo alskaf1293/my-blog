@@ -1,0 +1,40 @@
+---
+title: The Expectation Value of An Observable in Quantum mechanics
+description: ""
+date: 2025-11-21
+categories: [quantum mechanics]
+---
+
+In quantum mechanics, an observable is given by the Hermitian operator $\hat{Q}$. 
+The expectation value of said observable is given by
+
+$$
+\langle Q \rangle = \bra{\psi} \hat{Q} \ket{\psi}
+$$
+
+$\ket{\psi}$ can be expanded in the basis of the observable, given with the coefficients
+
+$$
+\ket{\psi} = c_1\ket{q_1} + c_2\ket{q_2} + \dots + c_k \ket{q_k} 
+$$
+
+$$
+\hat{Q}\ket{\psi} = \hat{Q}(c_1\ket{q_1} + c_2\ket{q_2} + \dots + c_k \ket{q_k})
+$$
+and given with the observable relation $\hat{Q}\ket{q_j} = q_j\ket{q_j}$, we have
+
+$$
+\bra{\psi} \hat{Q} \ket{\psi} = (c^*_1\bra{q_1} + c^*_2\bra{q_2} + \dots + c^*_k \bra{q_k}) \left(c_1 q_1\ket{q_1} + c_2 q_2\ket{q_2} + \dots + c_k q_k\ket{q_k} \right) \\
+$$
+
+$$
+\langle Q \rangle = \sum_{i,j} c^*_i c_j q_j \braket{q_i|q_j}
+$$
+
+and using the orthonormality condition $\braket{q_i|q_j} = \delta_{ij}$, we have
+
+$$
+\langle Q \rangle = \sum_{j} |c_j|^2 q_j
+$$
+
+This corresponds exactly to the expectation value equation.
