@@ -18,5 +18,11 @@
   },
   "posts/post3/index.qmd": {
     "index.html": "48d93538"
+  },
+  "posts/post4/index.qmd": {
+    "index.html": "7e2c0aa1"
+  },
+  "post/index.qmd": {
+    "index.html": "0f15c6fd"
   }
 }
