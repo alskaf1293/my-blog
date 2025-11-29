@@ -10,7 +10,38 @@
 <atom:link href="https://alskaf1293.github.io/my-blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Fri, 21 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 24 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>The completeness relation in quantum mechanics</title>
+  <link>https://alskaf1293.github.io/my-blog/posts/post4/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>A very simple but useful relation in quantum mechanics is the so called completeness relation. Here, I will derive it</p>
+<p>For any <img src="https://latex.codecogs.com/png.latex?%5Cket%7B%5Cpsi%7D"> living in a Hilbert space, you can represent the vector as a linear combination of some orthonormal bases</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cket%7B%5Cpsi%7D%20=%20%5Csum_%7Bi%7D%20c_%7B%5Calpha_i%7D%20%5Cket%7B%5Calpha_i%7D%0A"></p>
+<p>For any one of these orthonormal bases, applying the bra <img src="https://latex.codecogs.com/png.latex?%5Cbra%7B%5Calpha_k%7D"> with the orthonormality condition <img src="https://latex.codecogs.com/png.latex?%5Cbraket%7B%5Calpha_i%20%7C%20%5Calpha_j%7D%20=%20%5Cdelta_%7Bij%7D"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbraket%7B%5Calpha_k%20%7C%20%5Cpsi%7D%20=%20%5Cbra%7B%5Calpha_k%7D%20(%5Csum_%7Bi%7D%20c_%7B%5Calpha_i%7D%20%5Cket%7B%5Calpha_i%7D)%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbraket%7B%5Calpha_k%20%7C%20%5Cpsi%7D%20=%20c_%7B%5Calpha_k%7D%0A"></p>
+<p>So we can rewrite this</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cket%7B%5Cpsi%7D%20=%20%5Csum_%7Bi%7D%20c_%7B%5Calpha_i%7D%20%5Cket%7B%5Calpha_i%7D%0A"></p>
+<p>as</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cket%7B%5Cpsi%7D%20=%20%5Csum_%7Bi%7D%20%5Cket%7B%5Calpha_i%7D%20%5Cbraket%7B%5Calpha_i%20%7C%20%5Cpsi%7D%0A"></p>
+<p>Since <img src="https://latex.codecogs.com/png.latex?%5Cket%7B%5Cpsi%7D"> is arbitrary, we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cmathbb%7BI%7D%20=%20%5Csum_%7Bi%7D%20%5Cket%7B%5Calpha_i%7D%20%5Cbra%7B%5Calpha_i%7D%0A"></p>
+<p>The completeness relation. For the continuous case, you have the integral</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cmathbb%7BI%7D%20=%20%5Cint%20da%20%5Cket%7Ba%7D%20%5Cbra%7Ba%7D%0A"></p>
+
+
+
+ ]]></description>
+  <category>quantum mechanics</category>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post4/</guid>
+  <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>How the momentum operator arises from spacial translation symmetry</title>
   <link>https://alskaf1293.github.io/my-blog/posts/post1/</link>
