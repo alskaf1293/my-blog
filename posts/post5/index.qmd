@@ -1,6 +1,46 @@
 ---
-title: ""
+title: "The Distribution Shift Problem in LLMs"
 description: ""
-date: 2025-11-24
-categories: []
+date: 2025-11-28
+categories: [artificial intelligence]
 ---
+
+In preparation for graduate school and future research, I have decided to learn more about statistical learning theory,
+which is an area of machine learning that I haven't really looked at up until now.
+An interesting case study is the problem of LLM hallucination, which is a problem that
+any person who has spent a sufficient amount of time around chatbots has probably encountered.
+
+An LLM is self-supervised learning mechanism, where a model learns to predict the next token
+given a sequence of previous tokens. The sentence "The current president is Donald" should be
+met with an output token of "Trump". In reality, these tokens usually aren't words, but character
+bits (ie. 'ae', 'ee', 'e', etc.) and the bits to use in the dictionary is decided by information
+theory.
+
+Let
+
+$X$ be the space of possible token sequences
+
+$Y$ be the space of possible next tokens
+
+$P_{\text{train}}(x,y)$ be the training distribution
+
+$P_{\theta}(y | x)$ be the conditional distribution over the next token sequences given a sequence
+
+$\mathcal{L}(\theta) = \mathbb{E}_{(x,y) \sim P_{train}(x,y)}[-\log P_{\theta}(y \mid x)]$
+
+In machine learning, the model minimizes $\mathcal{L}$ over time. The so called "out of distribution"
+problem happens upon deployment, when
+
+$$
+P_{\text{train}}(x,y) \neq P_{\text{test}}(x,y)
+$$
+
+which yields hallucination and inability to derive new science. This is in contrast the assumption that
+underlies most theoretical and experimental machine learning that the testing and training
+distribution are the same.
+A measure for this distribution difference can be given by the Kullback-Leibler divergence
+
+$$
+D_{\mathrm{KL}}(P_{\text{train}} \,\|\, P_{\text{test}})
+$$
+

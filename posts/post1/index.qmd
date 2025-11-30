@@ -1,9 +1,0 @@
----
-title: "How the momentum operator arises from spacial translation symmetry"
-description: ""
-date: 2025-11-21
-categories: [quantum mechanics]
----
-
-$$
-$$

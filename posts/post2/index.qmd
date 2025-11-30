@@ -2,7 +2,7 @@
 title: "The Differences Between the Computer and the Brain"
 description: "Some notes on where von Neumann was right and wrong."
 date: 2025-11-21
-categories: [neuroscience, computation]
+categories: [artificial intelligence]
 ---
 
 I've recently just finished reading the book "The Computer and The Brain" by John Von Neumann. 
