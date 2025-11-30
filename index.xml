@@ -10,7 +10,36 @@
 <atom:link href="https://alskaf1293.github.io/my-blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Mon, 24 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 28 Nov 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>The Distribution Shift Problem in LLMs</title>
+  <link>https://alskaf1293.github.io/my-blog/posts/post5/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In preparation for graduate school and future research, I have decided to learn more about statistical learning theory, which is an area of machine learning that I haven’t really looked at up until now. An interesting case study is the problem of LLM hallucination, which is a problem that any person who has spent a sufficient amount of time around chatbots has probably encountered.</p>
+<p>An LLM is self-supervised learning mechanism, where a model learns to predict the next token given a sequence of previous tokens. The sentence “The current president is Donald” should be met with an output token of “Trump”. In reality, these tokens usually aren’t words, but character bits (ie. ‘ae’, ‘ee’, ‘e’, etc.) and the bits to use in the dictionary is decided by information theory.</p>
+<p>Let</p>
+<p><img src="https://latex.codecogs.com/png.latex?X"> be the space of possible token sequences</p>
+<p><img src="https://latex.codecogs.com/png.latex?Y"> be the space of possible next tokens</p>
+<p><img src="https://latex.codecogs.com/png.latex?P_%7B%5Ctext%7Btrain%7D%7D(x,y)"> be the training distribution</p>
+<p><img src="https://latex.codecogs.com/png.latex?P_%7B%5Ctheta%7D(y%20%7C%20x)"> be the conditional distribution over the next token sequences given a sequence</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BL%7D(%5Ctheta)%20=%20%5Cmathbb%7BE%7D_%7B(x,y)%20%5Csim%20P_%7Btrain%7D(x,y)%7D%5B-%5Clog%20P_%7B%5Ctheta%7D(y%20%5Cmid%20x)%5D"></p>
+<p>In machine learning, the model minimizes <img src="https://latex.codecogs.com/png.latex?%5Cmathcal%7BL%7D"> over time. The so called “out of distribution” problem happens upon deployment, when</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AP_%7B%5Ctext%7Btrain%7D%7D(x,y)%20%5Cneq%20P_%7B%5Ctext%7Btest%7D%7D(x,y)%0A"></p>
+<p>which yields hallucination and inability to derive new science. This is in contrast the assumption that underlies most theoretical and experimental machine learning that the testing and training distribution are the same. A measure for this distribution difference can be given by the Kullback-Leibler divergence</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AD_%7B%5Cmathrm%7BKL%7D%7D(P_%7B%5Ctext%7Btrain%7D%7D%20%5C,%5C%7C%5C,%20P_%7B%5Ctext%7Btest%7D%7D)%0A"></p>
+
+
+
+ ]]></description>
+  <category>artificial intelligence</category>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post5/</guid>
+  <pubDate>Fri, 28 Nov 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The completeness relation in quantum mechanics</title>
   <link>https://alskaf1293.github.io/my-blog/posts/post4/</link>
@@ -43,24 +72,6 @@
   <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>How the momentum operator arises from spacial translation symmetry</title>
-  <link>https://alskaf1293.github.io/my-blog/posts/post1/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p><img src="https://latex.codecogs.com/png.latex?%0A"></p>
-
-
-
- ]]></description>
-  <category>quantum mechanics</category>
-  <guid>https://alskaf1293.github.io/my-blog/posts/post1/</guid>
-  <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
   <title>The Differences Between the Computer and the Brain</title>
   <link>https://alskaf1293.github.io/my-blog/posts/post2/</link>
   <description><![CDATA[ 
@@ -90,8 +101,7 @@
 
 
  ]]></description>
-  <category>neuroscience</category>
-  <category>computation</category>
+  <category>artificial intelligence</category>
   <guid>https://alskaf1293.github.io/my-blog/posts/post2/</guid>
   <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
 </item>

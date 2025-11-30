@@ -7,6 +7,13 @@
     "text": "\\[\n\\newcommand{\\ket}[1]{\\left| #1 \\right\\rangle}\n\\newcommand{\\bra}[1]{\\left\\langle #1 \\right|}\n\\newcommand{\\braket}[2]{\\left\\langle #1 \\middle| #2 \\right\\rangle}\n\\]"
   },
   {
+    "objectID": "posts/post5/index.html",
+    "href": "posts/post5/index.html",
+    "title": "The Distribution Shift Problem in LLMs",
+    "section": "",
+    "text": "In preparation for graduate school and future research, I have decided to learn more about statistical learning theory, which is an area of machine learning that I haven’t really looked at up until now. An interesting case study is the problem of LLM hallucination, which is a problem that any person who has spent a sufficient amount of time around chatbots has probably encountered.\nAn LLM is self-supervised learning mechanism, where a model learns to predict the next token given a sequence of previous tokens. The sentence “The current president is Donald” should be met with an output token of “Trump”. In reality, these tokens usually aren’t words, but character bits (ie. ‘ae’, ‘ee’, ‘e’, etc.) and the bits to use in the dictionary is decided by information theory.\nLet\n\\(X\\) be the space of possible token sequences\n\\(Y\\) be the space of possible next tokens\n\\(P_{\\text{train}}(x,y)\\) be the training distribution\n\\(P_{\\theta}(y | x)\\) be the conditional distribution over the next token sequences given a sequence\n\\(\\mathcal{L}(\\theta) = \\mathbb{E}_{(x,y) \\sim P_{train}(x,y)}[-\\log P_{\\theta}(y \\mid x)]\\)\nIn machine learning, the model minimizes \\(\\mathcal{L}\\) over time. The so called “out of distribution” problem happens upon deployment, when\n\\[\nP_{\\text{train}}(x,y) \\neq P_{\\text{test}}(x,y)\n\\]\nwhich yields hallucination and inability to derive new science. This is in contrast the assumption that underlies most theoretical and experimental machine learning that the testing and training distribution are the same. A measure for this distribution difference can be given by the Kullback-Leibler divergence\n\\[\nD_{\\mathrm{KL}}(P_{\\text{train}} \\,\\|\\, P_{\\text{test}})\n\\]"
+  },
+  {
     "objectID": "posts/post2/index.html",
     "href": "posts/post2/index.html",
     "title": "The Differences Between the Computer and the Brain",
@@ -18,14 +25,7 @@
     "href": "index.html",
     "title": "Timothy Oh",
     "section": "",
-    "text": "Nov 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe completeness relation in quantum mechanics\n\n\n\nquantum mechanics\n\n\n\n\n\n\n\n\n\nNov 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nHow the momentum operator arises from spacial translation symmetry\n\n\n\nquantum mechanics\n\n\n\n\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Differences Between the Computer and the Brain\n\n\n\nneuroscience\n\ncomputation\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Expectation Value of An Observable in Quantum mechanics\n\n\n\nquantum mechanics\n\n\n\n\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post1/index.html",
-    "href": "posts/post1/index.html",
-    "title": "How the momentum operator arises from spacial translation symmetry",
-    "section": "",
-    "text": "\\[\n\\]"
+    "text": "The Distribution Shift Problem in LLMs\n\n\n\nartificial intelligence\n\n\n\n\n\n\n\n\n\nNov 28, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe completeness relation in quantum mechanics\n\n\n\nquantum mechanics\n\n\n\n\n\n\n\n\n\nNov 24, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Differences Between the Computer and the Brain\n\n\n\nartificial intelligence\n\n\n\nSome notes on where von Neumann was right and wrong.\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nThe Expectation Value of An Observable in Quantum mechanics\n\n\n\nquantum mechanics\n\n\n\n\n\n\n\n\n\nNov 21, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post3/index.html",
