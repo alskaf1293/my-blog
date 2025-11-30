@@ -25,6 +25,15 @@ I plan on using this website as a home; to write down half baked thoughts, talk 
 research directions, personal life, philosophy, and concrete notes on whatever I'm learning
 at the moment.
 
+<p style="text-align: center; margin-top: 0.5rem;">
+  <a href="https://docs.google.com/document/d/1r10cU6sWJfod_7N8ofYwIXHXj-x6cvrvTZV7hbAqvAY/edit?tab=t.0"
+     target="_blank"
+     rel="noopener noreferrer"
+     style="color: black; font-weight: 600; text-decoration: none;">
+    here you go noah
+  </a>
+</p>
+
 ::: {.html}
 <div class="gif-grid" style="margin-bottom: 2rem;">
   <div><img src="gifs/brain.gif"></div>
@@ -48,6 +57,8 @@ at the moment.
 <p style="text-align: center;">
   <a href="files/ResumeResearch.pdf" style="color: black; font-weight: 600; text-decoration: none;">Download CV</a>
 </p>
+
+
 
 
 $$
