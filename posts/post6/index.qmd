@@ -1,0 +1,71 @@
+---
+title: "Derivation of the Klein Gordon Equation"
+description: ""
+date: 2025-12-5
+categories: [quantum mechanics]
+---
+
+In classical mechanics, the total energy of a system can be written as
+
+$$
+E = T + V = \frac{1}{2} mv^2 + V = \frac{p^2}{2m} + V
+$$
+
+where $T$ and $V$ are the kinetic and potential energy of a system, respectively.
+In quantum mechanics, we promote these classical variables to Hermitian operators,
+where we use the standard substitutions in the position basis are
+
+$$
+\hat{E} = i \hbar \frac{\partial}{\partial t}
+$$
+
+$$
+\hat{p} = - i \hbar \nabla
+$$
+
+and the energy relation becomes
+
+$$
+i \hbar \frac{\partial}{\partial t} = -\frac{\hbar^2}{2m}\nabla^2+V
+$$
+
+and multiplication of the wavefunction $\psi$ yields
+
+$$
+i \hbar \frac{\partial \psi}{\partial t} = (-\frac{\hbar^2}{2m}\nabla^2+V) \psi
+$$
+
+the Schrodinger Equation. For the free particle, we can forget about $V$ and the relation
+reduces to 
+
+$$
+i \hbar \frac{\partial \psi}{\partial t} = -\frac{\hbar^2}{2m}\nabla^2 \psi
+$$
+
+We derived this from a non-relativistic nergy relation. To introduce relativity into our theory, we can instead start from the relativistic energy relation for a free particle
+
+$$
+E^2 = p^2c^2 + m^2c^4
+$$
+
+and plug in our operators as before
+
+$$
+- \hbar^2 \frac{\partial^2}{\partial t^2} = -\hbar^2 \nabla^2 c^2 + m^2 c^4
+$$
+
+$$
+- \hbar^2 \frac{\partial^2}{\partial t^2}\psi = (-\hbar^2 \nabla^2 c^2 + m^2 c^4) \psi
+$$
+
+Rearranging yields
+
+$$
+(\hbar^2 \frac{\partial^2}{\partial t^2}-\hbar^2 \nabla^2 c^2 + m^2 c^4) \psi = 0
+$$
+
+$$
+(\frac{1}{c^2} \frac{\partial^2}{\partial t^2}- \nabla^2 + \frac{m^2 c^2}{\hbar^2}) \psi = 0
+$$
+
+This is known a the Klein-Gordon equation. Historically, other physicists at the time were pretty well satisfied with this equation as a relativistic version of the Schrodinger Equation. However, a clever man by the name of Paul Dirac thought that there were problems with this equation. Firstly, it was second order in time, which means that you'd need to know the initial state $\psi(0)$ and it's first derivative $\psi'(0)$ in order to evolve it in time. Secondly, for reasons that I won't get into here, being second order in time means that interpreting the probability of the Klein Gordon equation allows negative probability, which is nonsensical.

@@ -1,0 +1,120 @@
+---
+title: "Non Degenerate First Order Perturbation Theory"
+description: ""
+date: 2026-01-14
+categories: [quantum mechanics]
+---
+
+Perturbation theory is the study of solving problems that are almost solvable, where the system that you're trying to solve for is close to one that can be solved exactly.
+
+First, we start with nondegenerate perturbation theory, where
+
+$$
+H_{0} \ket{n^{(0)}} = E^{(0)}_n \ket{n^{(0)}}
+$$
+
+where the nondegeneracy condition requires that
+
+$$
+E^{(0)}_n \neq E^{(0)}_m
+$$
+
+for all $n \neq m$. We start from the time independent Schrodinger equation in operator form
+
+$$
+H\ket{n}=E_n \ket{n}
+$$
+
+where our Hamiltonian is expanded in terms of the perturbation parameterized by $\lambda$
+
+$$
+H=H_0+\lambda V
+$$
+
+It's important to note here that V is not the potential, but the pertubation that we are adding to see how our energies and solutions are affected. \\
+
+The idea then is to expand the energies and solution kets in a power series
+
+$$
+E_n=E^{(0)}_n+\lambda E^{(1)}_n+\lambda^2 E^{(2)}_n + \dots
+$$
+
+$$
+\ket{n}=\ket{n^{(0)}}+\lambda \ket{n^{(1)}}+\lambda^2 \ket{n^{(2)}} + \dots
+$$
+
+Plugging these relations back into the time independent Schrodinger Equation
+
+$$
+(H_0+\lambda V)(\ket{n^{(0)}}+\lambda \ket{n^{(1)}}+\lambda^2 \ket{n^{(2)}} + \dots)
+=(E^{(0)}_n+\lambda E^{(1)}_n+\lambda^2 E^{(2)}_n + \dots)(\ket{n^{(0)}}+\lambda \ket{n^{(1)}}+\lambda^2 \ket{n^{(2)}} + \dots)
+$$
+
+If you expand this out, well the terms would be infinite. However, we can group this expansion in terms of their order in $\lambda$. 
+
+**First order non degenerate perturbation theory**
+
+For first order perturbation theory, we only consider the terms above that are linear in $\lambda$. Expanding it out, we have that in order 0 in $\lambda$, we have
+
+$$
+H_0\ket{n^{(0)}}=E^{(0)}_n\ket{n^{(0)}}
+$$
+
+which we have taken to already be true. For order 1 in $\lambda$, we have
+
+$$
+V\ket{n^{(0)}}+H_0\ket{n^{(1)}}=E^{(0)}_n\ket{n^{(1)}}+E^{(1)}_n\ket{n^{(0)}}
+$$
+
+$$
+(V-E^{(1)}_n)\ket{n^{(0)}}=(E^{(0)}_n-H_0)\ket{n^{(1)}}
+$$
+
+Taking the inner product, we have
+
+$$
+\bra{n^{(0)}}(V-E^{(1)}_n)\ket{n^{(0)}}=\bra{n^{(0)}}(E^{(0)}_n-H_0)\ket{n^{(1)}}
+$$
+
+$$
+\bra{n^{(0)}}V\ket{n^{(0)}}-E^{(1)}_n=0
+$$
+
+$$
+\boxed{E^{(1)}_n=\bra{n^{(0)}}V\ket{n^{(0)}}}
+$$
+
+The first order energy correction. To find the expression for the first order solution correction $\ket{n^{(1)}}$ we start from the order 1 expression again
+
+$$
+V\ket{n^{(0)}}+H_0\ket{n^{(1)}}=E^{(0)}_n\ket{n^{(1)}}+E^{(1)}_n\ket{n^{(0)}}
+$$
+
+Multiply both sides by $\bra{m^{0}}$ where $m \neq n$
+
+$$
+\bra{m^{0}}V\ket{n^{(0)}}+\bra{m^{0}}H_0\ket{n^{(1)}}=\bra{m^{0}}E^{(0)}_n\ket{n^{(1)}}+\bra{m^{0}}E^{(1)}_n\ket{n^{(0)}}
+$$
+
+$$
+\bra{m^{0}}V\ket{n^{(0)}}+E^{(0)}_m\braket{m^{0}|n^{(1)}}=E^{(0)}_n\braket{m^{0}|n^{(1)}}
+$$
+
+
+$$
+\bra{m^{0}}V\ket{n^{(0)}}=(E^{(0)}_n-E^{(0)}_m)\braket{m^{0}|n^{(1)}}
+$$
+
+$$
+\braket{m^{0}|n^{(1)}}=\frac{\bra{m^{0}}V\ket{n^{(0)}}}{(E^{(0)}_n-E^{(0)}_m)}
+$$
+
+With some arguments, if we impose that $\braket{n^{(0)}|n}=1$, then $\braket{n^{(0)}|n^{(1)}}=0$ and we have
+
+$$
+\boxed{\ket{n^{(1)}} = \sum_{m \neq n} \frac{\bra{m^{(0)}} V \ket{n^{(0)}}}{E_n^{(0)} - E_m^{(0)}} \ket{m^{(0)}}}
+$$
+
+
+
+

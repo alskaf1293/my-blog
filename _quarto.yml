@@ -20,6 +20,7 @@ website:
 
 format:
   html:
+    html-math-method: mathjax
     theme: cosmo
     toc: true
     include-after-body:
