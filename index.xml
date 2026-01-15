@@ -10,7 +10,96 @@
 <atom:link href="https://alskaf1293.github.io/my-blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Fri, 28 Nov 2025 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 14 Jan 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Non Degenerate First Order Perturbation Theory</title>
+  <link>https://alskaf1293.github.io/my-blog/posts/post7/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Perturbation theory is the study of solving problems that are almost solvable, where the system that you’re trying to solve for is close to one that can be solved exactly.</p>
+<p>First, we start with nondegenerate perturbation theory, where</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AH_%7B0%7D%20%5Cket%7Bn%5E%7B(0)%7D%7D%20=%20E%5E%7B(0)%7D_n%20%5Cket%7Bn%5E%7B(0)%7D%7D%0A"></p>
+<p>where the nondegeneracy condition requires that</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AE%5E%7B(0)%7D_n%20%5Cneq%20E%5E%7B(0)%7D_m%0A"></p>
+<p>for all <img src="https://latex.codecogs.com/png.latex?n%20%5Cneq%20m">. We start from the time independent Schrodinger equation in operator form</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AH%5Cket%7Bn%7D=E_n%20%5Cket%7Bn%7D%0A"></p>
+<p>where our Hamiltonian is expanded in terms of the perturbation parameterized by <img src="https://latex.codecogs.com/png.latex?%5Clambda"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AH=H_0+%5Clambda%20V%0A"></p>
+<p>It’s important to note here that V is not the potential, but the pertubation that we are adding to see how our energies and solutions are affected. \</p>
+<p>The idea then is to expand the energies and solution kets in a power series</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AE_n=E%5E%7B(0)%7D_n+%5Clambda%20E%5E%7B(1)%7D_n+%5Clambda%5E2%20E%5E%7B(2)%7D_n%20+%20%5Cdots%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cket%7Bn%7D=%5Cket%7Bn%5E%7B(0)%7D%7D+%5Clambda%20%5Cket%7Bn%5E%7B(1)%7D%7D+%5Clambda%5E2%20%5Cket%7Bn%5E%7B(2)%7D%7D%20+%20%5Cdots%0A"></p>
+<p>Plugging these relations back into the time independent Schrodinger Equation</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A(H_0+%5Clambda%20V)(%5Cket%7Bn%5E%7B(0)%7D%7D+%5Clambda%20%5Cket%7Bn%5E%7B(1)%7D%7D+%5Clambda%5E2%20%5Cket%7Bn%5E%7B(2)%7D%7D%20+%20%5Cdots)%0A=(E%5E%7B(0)%7D_n+%5Clambda%20E%5E%7B(1)%7D_n+%5Clambda%5E2%20E%5E%7B(2)%7D_n%20+%20%5Cdots)(%5Cket%7Bn%5E%7B(0)%7D%7D+%5Clambda%20%5Cket%7Bn%5E%7B(1)%7D%7D+%5Clambda%5E2%20%5Cket%7Bn%5E%7B(2)%7D%7D%20+%20%5Cdots)%0A"></p>
+<p>If you expand this out, well the terms would be infinite. However, we can group this expansion in terms of their order in <img src="https://latex.codecogs.com/png.latex?%5Clambda">.</p>
+<p><strong>First order non degenerate perturbation theory</strong></p>
+<p>For first order perturbation theory, we only consider the terms above that are linear in <img src="https://latex.codecogs.com/png.latex?%5Clambda">. Expanding it out, we have that in order 0 in <img src="https://latex.codecogs.com/png.latex?%5Clambda">, we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AH_0%5Cket%7Bn%5E%7B(0)%7D%7D=E%5E%7B(0)%7D_n%5Cket%7Bn%5E%7B(0)%7D%7D%0A"></p>
+<p>which we have taken to already be true. For order 1 in <img src="https://latex.codecogs.com/png.latex?%5Clambda">, we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AV%5Cket%7Bn%5E%7B(0)%7D%7D+H_0%5Cket%7Bn%5E%7B(1)%7D%7D=E%5E%7B(0)%7D_n%5Cket%7Bn%5E%7B(1)%7D%7D+E%5E%7B(1)%7D_n%5Cket%7Bn%5E%7B(0)%7D%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A(V-E%5E%7B(1)%7D_n)%5Cket%7Bn%5E%7B(0)%7D%7D=(E%5E%7B(0)%7D_n-H_0)%5Cket%7Bn%5E%7B(1)%7D%7D%0A"></p>
+<p>Taking the inner product, we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbra%7Bn%5E%7B(0)%7D%7D(V-E%5E%7B(1)%7D_n)%5Cket%7Bn%5E%7B(0)%7D%7D=%5Cbra%7Bn%5E%7B(0)%7D%7D(E%5E%7B(0)%7D_n-H_0)%5Cket%7Bn%5E%7B(1)%7D%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbra%7Bn%5E%7B(0)%7D%7DV%5Cket%7Bn%5E%7B(0)%7D%7D-E%5E%7B(1)%7D_n=0%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cboxed%7BE%5E%7B(1)%7D_n=%5Cbra%7Bn%5E%7B(0)%7D%7DV%5Cket%7Bn%5E%7B(0)%7D%7D%7D%0A"></p>
+<p>The first order energy correction. To find the expression for the first order solution correction <img src="https://latex.codecogs.com/png.latex?%5Cket%7Bn%5E%7B(1)%7D%7D"> we start from the order 1 expression again</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AV%5Cket%7Bn%5E%7B(0)%7D%7D+H_0%5Cket%7Bn%5E%7B(1)%7D%7D=E%5E%7B(0)%7D_n%5Cket%7Bn%5E%7B(1)%7D%7D+E%5E%7B(1)%7D_n%5Cket%7Bn%5E%7B(0)%7D%7D%0A"></p>
+<p>Multiply both sides by <img src="https://latex.codecogs.com/png.latex?%5Cbra%7Bm%5E%7B0%7D%7D"> where <img src="https://latex.codecogs.com/png.latex?m%20%5Cneq%20n"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbra%7Bm%5E%7B0%7D%7DV%5Cket%7Bn%5E%7B(0)%7D%7D+%5Cbra%7Bm%5E%7B0%7D%7DH_0%5Cket%7Bn%5E%7B(1)%7D%7D=%5Cbra%7Bm%5E%7B0%7D%7DE%5E%7B(0)%7D_n%5Cket%7Bn%5E%7B(1)%7D%7D+%5Cbra%7Bm%5E%7B0%7D%7DE%5E%7B(1)%7D_n%5Cket%7Bn%5E%7B(0)%7D%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbra%7Bm%5E%7B0%7D%7DV%5Cket%7Bn%5E%7B(0)%7D%7D+E%5E%7B(0)%7D_m%5Cbraket%7Bm%5E%7B0%7D%7Cn%5E%7B(1)%7D%7D=E%5E%7B(0)%7D_n%5Cbraket%7Bm%5E%7B0%7D%7Cn%5E%7B(1)%7D%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbra%7Bm%5E%7B0%7D%7DV%5Cket%7Bn%5E%7B(0)%7D%7D=(E%5E%7B(0)%7D_n-E%5E%7B(0)%7D_m)%5Cbraket%7Bm%5E%7B0%7D%7Cn%5E%7B(1)%7D%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbraket%7Bm%5E%7B0%7D%7Cn%5E%7B(1)%7D%7D=%5Cfrac%7B%5Cbra%7Bm%5E%7B0%7D%7DV%5Cket%7Bn%5E%7B(0)%7D%7D%7D%7B(E%5E%7B(0)%7D_n-E%5E%7B(0)%7D_m)%7D%0A"></p>
+<p>With some arguments, if we impose that <img src="https://latex.codecogs.com/png.latex?%5Cbraket%7Bn%5E%7B(0)%7D%7Cn%7D=1">, then <img src="https://latex.codecogs.com/png.latex?%5Cbraket%7Bn%5E%7B(0)%7D%7Cn%5E%7B(1)%7D%7D=0"> and we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cboxed%7B%5Cket%7Bn%5E%7B(1)%7D%7D%20=%20%5Csum_%7Bm%20%5Cneq%20n%7D%20%5Cfrac%7B%5Cbra%7Bm%5E%7B(0)%7D%7D%20V%20%5Cket%7Bn%5E%7B(0)%7D%7D%7D%7BE_n%5E%7B(0)%7D%20-%20E_m%5E%7B(0)%7D%7D%20%5Cket%7Bm%5E%7B(0)%7D%7D%7D%0A"></p>
+
+
+
+ ]]></description>
+  <category>quantum mechanics</category>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post7/</guid>
+  <pubDate>Wed, 14 Jan 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Derivation of the Klein Gordon Equation</title>
+  <link>https://alskaf1293.github.io/my-blog/posts/post6/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In classical mechanics, the total energy of a system can be written as</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AE%20=%20T%20+%20V%20=%20%5Cfrac%7B1%7D%7B2%7D%20mv%5E2%20+%20V%20=%20%5Cfrac%7Bp%5E2%7D%7B2m%7D%20+%20V%0A"></p>
+<p>where <img src="https://latex.codecogs.com/png.latex?T"> and <img src="https://latex.codecogs.com/png.latex?V"> are the kinetic and potential energy of a system, respectively. In quantum mechanics, we promote these classical variables to Hermitian operators, where we use the standard substitutions in the position basis are</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7BE%7D%20=%20i%20%5Chbar%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20t%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7Bp%7D%20=%20-%20i%20%5Chbar%20%5Cnabla%0A"></p>
+<p>and the energy relation becomes</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ai%20%5Chbar%20%5Cfrac%7B%5Cpartial%7D%7B%5Cpartial%20t%7D%20=%20-%5Cfrac%7B%5Chbar%5E2%7D%7B2m%7D%5Cnabla%5E2+V%0A"></p>
+<p>and multiplication of the wavefunction <img src="https://latex.codecogs.com/png.latex?%5Cpsi"> yields</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ai%20%5Chbar%20%5Cfrac%7B%5Cpartial%20%5Cpsi%7D%7B%5Cpartial%20t%7D%20=%20(-%5Cfrac%7B%5Chbar%5E2%7D%7B2m%7D%5Cnabla%5E2+V)%20%5Cpsi%0A"></p>
+<p>the Schrodinger Equation. For the free particle, we can forget about <img src="https://latex.codecogs.com/png.latex?V"> and the relation reduces to</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0Ai%20%5Chbar%20%5Cfrac%7B%5Cpartial%20%5Cpsi%7D%7B%5Cpartial%20t%7D%20=%20-%5Cfrac%7B%5Chbar%5E2%7D%7B2m%7D%5Cnabla%5E2%20%5Cpsi%0A"></p>
+<p>We derived this from a non-relativistic nergy relation. To introduce relativity into our theory, we can instead start from the relativistic energy relation for a free particle</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0AE%5E2%20=%20p%5E2c%5E2%20+%20m%5E2c%5E4%0A"></p>
+<p>and plug in our operators as before</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A-%20%5Chbar%5E2%20%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20t%5E2%7D%20=%20-%5Chbar%5E2%20%5Cnabla%5E2%20c%5E2%20+%20m%5E2%20c%5E4%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A-%20%5Chbar%5E2%20%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20t%5E2%7D%5Cpsi%20=%20(-%5Chbar%5E2%20%5Cnabla%5E2%20c%5E2%20+%20m%5E2%20c%5E4)%20%5Cpsi%0A"></p>
+<p>Rearranging yields</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A(%5Chbar%5E2%20%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20t%5E2%7D-%5Chbar%5E2%20%5Cnabla%5E2%20c%5E2%20+%20m%5E2%20c%5E4)%20%5Cpsi%20=%200%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A(%5Cfrac%7B1%7D%7Bc%5E2%7D%20%5Cfrac%7B%5Cpartial%5E2%7D%7B%5Cpartial%20t%5E2%7D-%20%5Cnabla%5E2%20+%20%5Cfrac%7Bm%5E2%20c%5E2%7D%7B%5Chbar%5E2%7D)%20%5Cpsi%20=%200%0A"></p>
+<p>This is known a the Klein-Gordon equation. Historically, other physicists at the time were pretty well satisfied with this equation as a relativistic version of the Schrodinger Equation. However, a clever man by the name of Paul Dirac thought that there were problems with this equation. Firstly, it was second order in time, which means that you’d need to know the initial state <img src="https://latex.codecogs.com/png.latex?%5Cpsi(0)"> and it’s first derivative <img src="https://latex.codecogs.com/png.latex?%5Cpsi'(0)"> in order to evolve it in time. Secondly, for reasons that I won’t get into here, being second order in time means that interpreting the probability of the Klein Gordon equation allows negative probability, which is nonsensical.</p>
+
+
+
+ ]]></description>
+  <category>quantum mechanics</category>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post6/</guid>
+  <pubDate>Fri, 05 Dec 2025 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>The Distribution Shift Problem in LLMs</title>
   <link>https://alskaf1293.github.io/my-blog/posts/post5/</link>
