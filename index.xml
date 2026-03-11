@@ -10,7 +10,29 @@
 <atom:link href="https://alskaf1293.github.io/my-blog/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Sun, 18 Jan 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 10 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>A view of neuroscience from the perspective of building artificial systems</title>
+  <link>https://alskaf1293.github.io/my-blog/posts/post9/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Something that I have been thinking about recently is the question of how relavent the human connectome is for creating artificial systems. The brain is divided into several parts: the cerebral cortex, basal ganglia, hippocampus, amygdala, and so on, each with their own respective functions. At the outset, this seems daunting - especially for people building intelligent systems that believe intelligence should come from systems that look like the brain. However, there is this view that the specific wiring and compartmentalization is less important than one might think and that the learning rule is really what matters.</p>
+<p>An interesting case study are the studies associated with British neuroscientist John Lorber. Lorber was studying hydrocephalus patients, people whose skulls had filled largely with cerebrospinal fluid, massively compressing brain tissue. In one case, he found that 90% of his patient’s brain was empty, the remaining 10 percent coming from a thin rind of tissue outlining the inside of the skull. What’s even crazier, the guy had a degree in mathematics, a completely normal social life, and had an IQ of 126! Lorber’s framing was titled “Is your brain really necessary?”, which sparked alot of controversy.</p>
+<p>Pausing to think about this case study, one can rule out the need for specific compartments to be required for humans to be intelligent. I mean, if they were, then these sorts of cases wouldn’t exist. The condition for these cases to exist is that the brain was compressed gradually and slowly - over the course of years. Parts that were once essential for functionality had a chance to adapt to the new topology, and what remained is an incredibly dense network of neurons.</p>
+<p>Judging from this, we can conclude that the learning rule seems to be what’s more important. That is to say - the brain adapts, and a new view of the compartments of the brain can emerge. The fact that there is a “cerrebellum” here and a “hippocampus” there is mostly just a consequence of evolution adapting according to conditions and letting randomness stay if it works. In this case, stressing about why the brain has all the individual parts that it does is like stressing about why we exist with five fingers instead of six. Could it be that five-fingered humans had an evolutionary advantage over six-fingered humans and that all the six-fingered people were pruned out of the evolutionary tree? Maybe. A more plausible theory is that evolution found five fingers, it worked, and the design was never iterated upon. The brain, with all its glorious sections and compartments, can be viewed in the same way.</p>
+<p>If one does take this view, it is great news for neuromorphic engineers, as it is a massive simplification of what makes systems actually intelligent and reduces the problems that a neuromorphic engineer would need to focus on.</p>
+
+
+
+ ]]></description>
+  <category>neuroscience</category>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post9/</guid>
+  <pubDate>Tue, 10 Mar 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Crossroads</title>
   <link>https://alskaf1293.github.io/my-blog/posts/post8/</link>
@@ -182,6 +204,33 @@
   <pubDate>Mon, 24 Nov 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
+  <title>The Expectation Value of An Observable in Quantum mechanics</title>
+  <link>https://alskaf1293.github.io/my-blog/posts/post3/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>In quantum mechanics, an observable is given by the Hermitian operator <img src="https://latex.codecogs.com/png.latex?%5Chat%7BQ%7D">. The expectation value of said observable is given by</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Cbra%7B%5Cpsi%7D%20%5Chat%7BQ%7D%20%5Cket%7B%5Cpsi%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cket%7B%5Cpsi%7D"> can be expanded in the basis of the observable, given with the coefficients</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cket%7B%5Cpsi%7D%20=%20c_1%5Cket%7Bq_1%7D%20+%20c_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20%5Cket%7Bq_k%7D%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7BQ%7D%5Cket%7B%5Cpsi%7D%20=%20%5Chat%7BQ%7D(c_1%5Cket%7Bq_1%7D%20+%20c_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20%5Cket%7Bq_k%7D)%0A"> and given with the observable relation <img src="https://latex.codecogs.com/png.latex?%5Chat%7BQ%7D%5Cket%7Bq_j%7D%20=%20q_j%5Cket%7Bq_j%7D">, we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbra%7B%5Cpsi%7D%20%5Chat%7BQ%7D%20%5Cket%7B%5Cpsi%7D%20=%20(c%5E*_1%5Cbra%7Bq_1%7D%20+%20c%5E*_2%5Cbra%7Bq_2%7D%20+%20%5Cdots%20+%20c%5E*_k%20%5Cbra%7Bq_k%7D)%20%5Cleft(c_1%20q_1%5Cket%7Bq_1%7D%20+%20c_2%20q_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20q_k%5Cket%7Bq_k%7D%20%5Cright)%20%5C%5C%0A"></p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Csum_%7Bi,j%7D%20c%5E*_i%20c_j%20q_j%20%5Cbraket%7Bq_i%7Cq_j%7D%0A"></p>
+<p>and using the orthonormality condition <img src="https://latex.codecogs.com/png.latex?%5Cbraket%7Bq_i%7Cq_j%7D%20=%20%5Cdelta_%7Bij%7D">, we have</p>
+<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Csum_%7Bj%7D%20%7Cc_j%7C%5E2%20q_j%0A"></p>
+<p>This corresponds exactly to the expectation value equation.</p>
+
+
+
+ ]]></description>
+  <category>quantum mechanics</category>
+  <guid>https://alskaf1293.github.io/my-blog/posts/post3/</guid>
+  <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
   <title>The Differences Between the Computer and the Brain</title>
   <link>https://alskaf1293.github.io/my-blog/posts/post2/</link>
   <description><![CDATA[ 
@@ -213,33 +262,6 @@
  ]]></description>
   <category>artificial intelligence</category>
   <guid>https://alskaf1293.github.io/my-blog/posts/post2/</guid>
-  <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>The Expectation Value of An Observable in Quantum mechanics</title>
-  <link>https://alskaf1293.github.io/my-blog/posts/post3/</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<p>In quantum mechanics, an observable is given by the Hermitian operator <img src="https://latex.codecogs.com/png.latex?%5Chat%7BQ%7D">. The expectation value of said observable is given by</p>
-<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Cbra%7B%5Cpsi%7D%20%5Chat%7BQ%7D%20%5Cket%7B%5Cpsi%7D%0A"></p>
-<p><img src="https://latex.codecogs.com/png.latex?%5Cket%7B%5Cpsi%7D"> can be expanded in the basis of the observable, given with the coefficients</p>
-<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cket%7B%5Cpsi%7D%20=%20c_1%5Cket%7Bq_1%7D%20+%20c_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20%5Cket%7Bq_k%7D%0A"></p>
-<p><img src="https://latex.codecogs.com/png.latex?%0A%5Chat%7BQ%7D%5Cket%7B%5Cpsi%7D%20=%20%5Chat%7BQ%7D(c_1%5Cket%7Bq_1%7D%20+%20c_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20%5Cket%7Bq_k%7D)%0A"> and given with the observable relation <img src="https://latex.codecogs.com/png.latex?%5Chat%7BQ%7D%5Cket%7Bq_j%7D%20=%20q_j%5Cket%7Bq_j%7D">, we have</p>
-<p><img src="https://latex.codecogs.com/png.latex?%0A%5Cbra%7B%5Cpsi%7D%20%5Chat%7BQ%7D%20%5Cket%7B%5Cpsi%7D%20=%20(c%5E*_1%5Cbra%7Bq_1%7D%20+%20c%5E*_2%5Cbra%7Bq_2%7D%20+%20%5Cdots%20+%20c%5E*_k%20%5Cbra%7Bq_k%7D)%20%5Cleft(c_1%20q_1%5Cket%7Bq_1%7D%20+%20c_2%20q_2%5Cket%7Bq_2%7D%20+%20%5Cdots%20+%20c_k%20q_k%5Cket%7Bq_k%7D%20%5Cright)%20%5C%5C%0A"></p>
-<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Csum_%7Bi,j%7D%20c%5E*_i%20c_j%20q_j%20%5Cbraket%7Bq_i%7Cq_j%7D%0A"></p>
-<p>and using the orthonormality condition <img src="https://latex.codecogs.com/png.latex?%5Cbraket%7Bq_i%7Cq_j%7D%20=%20%5Cdelta_%7Bij%7D">, we have</p>
-<p><img src="https://latex.codecogs.com/png.latex?%0A%5Clangle%20Q%20%5Crangle%20=%20%5Csum_%7Bj%7D%20%7Cc_j%7C%5E2%20q_j%0A"></p>
-<p>This corresponds exactly to the expectation value equation.</p>
-
-
-
- ]]></description>
-  <category>quantum mechanics</category>
-  <guid>https://alskaf1293.github.io/my-blog/posts/post3/</guid>
   <pubDate>Fri, 21 Nov 2025 00:00:00 GMT</pubDate>
 </item>
 </channel>

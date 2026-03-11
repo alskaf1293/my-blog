@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-21">
+<meta name="dcterms.date" content="2026-03-10">
 
-<title>The Expectation Value of An Observable in Quantum mechanics – Timothy Oh</title>
+<title>A view of neuroscience from the perspective of building artificial systems – Timothy Oh</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,35 +71,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -151,9 +122,9 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">The Expectation Value of An Observable in Quantum mechanics</h1>
+      <h1 class="title">A view of neuroscience from the perspective of building artificial systems</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">quantum mechanics</div>
+                <div class="quarto-category">neuroscience</div>
               </div>
                   </div>
   </div>
@@ -165,7 +136,7 @@ window.Quarto = {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">November 21, 2025</p>
+        <p class="date">March 10, 2026</p>
       </div>
     </div>
     
@@ -186,28 +157,11 @@ window.Quarto = {
 
 
 
-<p>In quantum mechanics, an observable is given by the Hermitian operator <span class="math inline">\(\hat{Q}\)</span>. The expectation value of said observable is given by</p>
-<p><span class="math display">\[
-\langle Q \rangle = \bra{\psi} \hat{Q} \ket{\psi}
-\]</span></p>
-<p><span class="math inline">\(\ket{\psi}\)</span> can be expanded in the basis of the observable, given with the coefficients</p>
-<p><span class="math display">\[
-\ket{\psi} = c_1\ket{q_1} + c_2\ket{q_2} + \dots + c_k \ket{q_k}
-\]</span></p>
-<p><span class="math display">\[
-\hat{Q}\ket{\psi} = \hat{Q}(c_1\ket{q_1} + c_2\ket{q_2} + \dots + c_k \ket{q_k})
-\]</span> and given with the observable relation <span class="math inline">\(\hat{Q}\ket{q_j} = q_j\ket{q_j}\)</span>, we have</p>
-<p><span class="math display">\[
-\bra{\psi} \hat{Q} \ket{\psi} = (c^*_1\bra{q_1} + c^*_2\bra{q_2} + \dots + c^*_k \bra{q_k}) \left(c_1 q_1\ket{q_1} + c_2 q_2\ket{q_2} + \dots + c_k q_k\ket{q_k} \right) \\
-\]</span></p>
-<p><span class="math display">\[
-\langle Q \rangle = \sum_{i,j} c^*_i c_j q_j \braket{q_i|q_j}
-\]</span></p>
-<p>and using the orthonormality condition <span class="math inline">\(\braket{q_i|q_j} = \delta_{ij}\)</span>, we have</p>
-<p><span class="math display">\[
-\langle Q \rangle = \sum_{j} |c_j|^2 q_j
-\]</span></p>
-<p>This corresponds exactly to the expectation value equation.</p>
+<p>Something that I have been thinking about recently is the question of how relavent the human connectome is for creating artificial systems. The brain is divided into several parts: the cerebral cortex, basal ganglia, hippocampus, amygdala, and so on, each with their own respective functions. At the outset, this seems daunting - especially for people building intelligent systems that believe intelligence should come from systems that look like the brain. However, there is this view that the specific wiring and compartmentalization is less important than one might think and that the learning rule is really what matters.</p>
+<p>An interesting case study are the studies associated with British neuroscientist John Lorber. Lorber was studying hydrocephalus patients, people whose skulls had filled largely with cerebrospinal fluid, massively compressing brain tissue. In one case, he found that 90% of his patient’s brain was empty, the remaining 10 percent coming from a thin rind of tissue outlining the inside of the skull. What’s even crazier, the guy had a degree in mathematics, a completely normal social life, and had an IQ of 126! Lorber’s framing was titled “Is your brain really necessary?”, which sparked alot of controversy.</p>
+<p>Pausing to think about this case study, one can rule out the need for specific compartments to be required for humans to be intelligent. I mean, if they were, then these sorts of cases wouldn’t exist. The condition for these cases to exist is that the brain was compressed gradually and slowly - over the course of years. Parts that were once essential for functionality had a chance to adapt to the new topology, and what remained is an incredibly dense network of neurons.</p>
+<p>Judging from this, we can conclude that the learning rule seems to be what’s more important. That is to say - the brain adapts, and a new view of the compartments of the brain can emerge. The fact that there is a “cerrebellum” here and a “hippocampus” there is mostly just a consequence of evolution adapting according to conditions and letting randomness stay if it works. In this case, stressing about why the brain has all the individual parts that it does is like stressing about why we exist with five fingers instead of six. Could it be that five-fingered humans had an evolutionary advantage over six-fingered humans and that all the six-fingered people were pruned out of the evolutionary tree? Maybe. A more plausible theory is that evolution found five fingers, it worked, and the design was never iterated upon. The brain, with all its glorious sections and compartments, can be viewed in the same way.</p>
+<p>If one does take this view, it is great news for neuromorphic engineers, as it is a massive simplification of what makes systems actually intelligent and reduces the problems that a neuromorphic engineer would need to focus on.</p>
 
 
 
