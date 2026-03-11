@@ -5,7 +5,7 @@ date: 2026-03-10
 categories: [neuroscience]
 ---
 
-Something that I have been thinking about recently is the question of how relavent the human connectome
+Something that I have been thinking about recently is the question of how relevent the human connectome
 is for creating artificial systems. The brain is divided into several parts: the cerebral cortex,
 basal ganglia, hippocampus, amygdala, and so on, each with their own respective functions. At the outset,
 this seems daunting - especially for people building intelligent systems that believe intelligence should
